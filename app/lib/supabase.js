@@ -4,6 +4,14 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
 
+console.log('环境变量检查:', {
+  supabaseUrl: supabaseUrl,
+  supabaseAnonKey: supabaseAnonKey,
+  nodeEnv: process.env.NODE_ENV,
+  url2: process.env.NEXT_PUBLIC_SUPABASE_URL,
+  anon2: NEXT_PUBLIC_SUPABASE_ANON_KEY
+});
+
 const createNoopChannel = () => {
     const channel = {
         on: () => channel,
