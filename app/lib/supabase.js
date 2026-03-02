@@ -7,9 +7,7 @@ export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
 console.log('环境变量检查:', {
   supabaseUrl: supabaseUrl,
   supabaseAnonKey: supabaseAnonKey,
-  nodeEnv: process.env.NODE_ENV,
-  url2: process.env.NEXT_PUBLIC_SUPABASE_URL,
-  anon2: NEXT_PUBLIC_SUPABASE_ANON_KEY
+  nodeEnv: process.env.NODE_ENV
 });
 
 const createNoopChannel = () => {
